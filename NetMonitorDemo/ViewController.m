@@ -7,6 +7,8 @@
 
 #import "ViewController.h"
 
+#import "FUNetMonitorTool.h"
+
 @interface ViewController ()
 
 @end
@@ -15,7 +17,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [FUNetMonitorTool defultObsever];
+    [KFUNetMonitorTool startNetMonitor];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(networkStatusChanged:) name:FUReachabilityChangedNotification object:nil];
+}
+
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:FUReachabilityChangedNotification object:nil];
+}
+
+- (void)networkStatusChanged:(NSNotification *)notify {
+    NSLog(@"notify-------%@", notify.userInfo);
 }
 
 

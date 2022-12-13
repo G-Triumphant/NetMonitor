@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		48D301DF2851E57E00776906 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D301DE2851E57E00776906 /* AppDelegate.m */; };
-		48D301E22851E57E00776906 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D301E12851E57E00776906 /* SceneDelegate.m */; };
 		48D301E52851E57E00776906 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D301E42851E57E00776906 /* ViewController.m */; };
 		48D301E82851E57E00776906 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48D301E62851E57E00776906 /* Main.storyboard */; };
 		48D301EA2851E58000776906 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48D301E92851E58000776906 /* Assets.xcassets */; };
@@ -17,6 +16,11 @@
 		48D301FA2851E58000776906 /* NetMonitorDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D301F92851E58000776906 /* NetMonitorDemoTests.m */; };
 		48D302042851E58000776906 /* NetMonitorDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D302032851E58000776906 /* NetMonitorDemoUITests.m */; };
 		48D302062851E58000776906 /* NetMonitorDemoUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D302052851E58000776906 /* NetMonitorDemoUITestsLaunchTests.m */; };
+		48D3021B2851E5E500776906 /* FUNetMonitorTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D302162851E5E500776906 /* FUNetMonitorTool.m */; };
+		48D3021C2851E5E500776906 /* FUPinger.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D302172851E5E500776906 /* FUPinger.m */; };
+		48D3021D2851E5E500776906 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D302182851E5E500776906 /* AFNetworkReachabilityManager.m */; };
+		48D3021E2851E5E500776906 /* SimplePing.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D302192851E5E500776906 /* SimplePing.m */; };
+		48D302212851E7E700776906 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48D302202851E7E700776906 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +44,6 @@
 		48D301DA2851E57E00776906 /* NetMonitorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetMonitorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48D301DD2851E57E00776906 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		48D301DE2851E57E00776906 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		48D301E02851E57E00776906 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		48D301E12851E57E00776906 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		48D301E32851E57E00776906 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		48D301E42851E57E00776906 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		48D301E72851E57E00776906 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -54,6 +56,15 @@
 		48D301FF2851E58000776906 /* NetMonitorDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetMonitorDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		48D302032851E58000776906 /* NetMonitorDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetMonitorDemoUITests.m; sourceTree = "<group>"; };
 		48D302052851E58000776906 /* NetMonitorDemoUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetMonitorDemoUITestsLaunchTests.m; sourceTree = "<group>"; };
+		48D302132851E5E500776906 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		48D302142851E5E500776906 /* FUPinger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUPinger.h; sourceTree = "<group>"; };
+		48D302152851E5E500776906 /* SimplePing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePing.h; sourceTree = "<group>"; };
+		48D302162851E5E500776906 /* FUNetMonitorTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FUNetMonitorTool.m; sourceTree = "<group>"; };
+		48D302172851E5E500776906 /* FUPinger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FUPinger.m; sourceTree = "<group>"; };
+		48D302182851E5E500776906 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		48D302192851E5E500776906 /* SimplePing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimplePing.m; sourceTree = "<group>"; };
+		48D3021A2851E5E500776906 /* FUNetMonitorTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUNetMonitorTool.h; sourceTree = "<group>"; };
+		48D302202851E7E700776906 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48D302212851E7E700776906 /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +100,7 @@
 				48D301F82851E58000776906 /* NetMonitorDemoTests */,
 				48D302022851E58000776906 /* NetMonitorDemoUITests */,
 				48D301DB2851E57E00776906 /* Products */,
+				48D3021F2851E7E700776906 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,10 +117,9 @@
 		48D301DC2851E57E00776906 /* NetMonitorDemo */ = {
 			isa = PBXGroup;
 			children = (
+				48D302122851E5E500776906 /* NetMonitorTool */,
 				48D301DD2851E57E00776906 /* AppDelegate.h */,
 				48D301DE2851E57E00776906 /* AppDelegate.m */,
-				48D301E02851E57E00776906 /* SceneDelegate.h */,
-				48D301E12851E57E00776906 /* SceneDelegate.m */,
 				48D301E32851E57E00776906 /* ViewController.h */,
 				48D301E42851E57E00776906 /* ViewController.m */,
 				48D301E62851E57E00776906 /* Main.storyboard */,
@@ -134,6 +146,29 @@
 				48D302052851E58000776906 /* NetMonitorDemoUITestsLaunchTests.m */,
 			);
 			path = NetMonitorDemoUITests;
+			sourceTree = "<group>";
+		};
+		48D302122851E5E500776906 /* NetMonitorTool */ = {
+			isa = PBXGroup;
+			children = (
+				48D302132851E5E500776906 /* AFNetworkReachabilityManager.h */,
+				48D302182851E5E500776906 /* AFNetworkReachabilityManager.m */,
+				48D3021A2851E5E500776906 /* FUNetMonitorTool.h */,
+				48D302162851E5E500776906 /* FUNetMonitorTool.m */,
+				48D302142851E5E500776906 /* FUPinger.h */,
+				48D302172851E5E500776906 /* FUPinger.m */,
+				48D302152851E5E500776906 /* SimplePing.h */,
+				48D302192851E5E500776906 /* SimplePing.m */,
+			);
+			path = NetMonitorTool;
+			sourceTree = "<group>";
+		};
+		48D3021F2851E7E700776906 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				48D302202851E7E700776906 /* SystemConfiguration.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,9 +302,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				48D301E52851E57E00776906 /* ViewController.m in Sources */,
+				48D3021B2851E5E500776906 /* FUNetMonitorTool.m in Sources */,
 				48D301DF2851E57E00776906 /* AppDelegate.m in Sources */,
 				48D301F02851E58000776906 /* main.m in Sources */,
-				48D301E22851E57E00776906 /* SceneDelegate.m in Sources */,
+				48D3021D2851E5E500776906 /* AFNetworkReachabilityManager.m in Sources */,
+				48D3021E2851E5E500776906 /* SimplePing.m in Sources */,
+				48D3021C2851E5E500776906 /* FUPinger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,6 +490,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -479,6 +518,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
